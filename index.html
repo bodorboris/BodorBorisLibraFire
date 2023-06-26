@@ -1,59 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles/styles.css" />
-		<title>Document</title>
-	</head>
-	<body>
-		<div class="section sec1">
-			<h1>Section 1</h1>
-		</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>LibraFire</title>
+  </head>
+  <body>
+    <!-- =============SECTION 1 START =================== -->
 
-		<div class="section sec2">
-			<h1>Section 2</h1>
-		</div>
+    <div class="section sec1">
+      <div class="content">
+        <div class="navBar">
+          <div class="pageLogo">
+            <img src="img/sec1/Logo.png" alt="logo" />
+          </div>
+          <div class="text">
+            <span class="label-down">Training Match</span>
+            <span class="label-down">Training Match</span>
+          </div>
+          <div class="text">
+            <span class="label-down">Digital Initiatives</span>
+            <span class="label-down">Digital Initiatives</span>
+          </div>
+          <div class="text">
+            <span class="label-down">Inspiring Stories</span>
+            <span class="label-down">Inspiring Stories</span>
+          </div>
+          <div class="text">
+            <span class="label-down">Our Mission</span>
+            <span class="label-down">Our Mission</span>
+          </div>
+          <div class="text">
+            <span class="label-down">Contact</span>
+            <span class="label-down">Contact</span>
+          </div>
+          <div class="hLine"></div>
+          <div class="loginBar">
+            <div class="btn">
+              <span class="label-down">Take the test</span>
+              <span class="label-down">Take the test</span>
+            </div>
+            <div class="loginText">Become a digital partner</div>
+          </div>
+          <div class="hLine"></div>
+          <div class="lang">
+            <div class="textL">EN</div>
+            <img src="img/sec1/dropdown.png" alt="arrowD" />
+          </div>
+        </div>
+      </div>
+      <div class="other">
+        <div class="headerTogether">
+          <div class="headerLeft">The home of digital skills in</div>
+          <div class="image-container">
+            <img src="img/sec1/text1.png" class="active" />
+            <img src="img/sec1/text2.png" alt="Image 2" />
+            <img src="img/sec1/text3.png" alt="Image 3" />
+          </div>
+        </div>
+        <div class="textParagraph">The home of digital skills in Belgium</div>
+        <div class="searchBar">
+          <div class="search">
+            <img src="img/sec1/search.png" alt="searchIcon" />
+            Search topics
+          </div>
+          <div class="lineHz"></div>
+          <div class="dropDown" onclick="toggleDropdown()">
+            <div class="dropdown">
+              <div class="selected-option">
+                <img
+                  src="img/sec1/brief.png"
+                  alt="Projects"
+                  class="option-image"
+                />
+                <span class="option-text">Select a project</span>
+                <img src="img/sec1/dropdown.png" alt="arrowD" />
+              </div>
+              <ul class="options-list">
+                <li class="option">Project 1</li>
+                <li class="option">Project 2</li>
+                <li class="option">Project 3</li>
+              </ul>
+            </div>
+          </div>
+          <div class="lineHz"></div>
+          <div class="btn">
+            <span class="label-down">Start my search</span>
+            <span class="label-down">Start my search</span>
+          </div>
+        </div>
+        <div class="textParagraph">Or enjoy a little browsing!</div>
+      </div>
+      <div class="imgArrow1">
+        <img src="img/sec1/arrowsR.png" alt="arrR" />
+      </div>
+      <div class="imgArrow2">
+        <img src="img/sec1/arrowsL.png" alt="arrL" />
+      </div>
+    </div>
+    <!-- =============SECTION 1 END =================== -->
 
-		<div class="section sec3">
-			<h1>Section 3</h1>
-		</div>
+    <!-- =============SECTION 2 START =================== -->
 
-		<div class="section sec4">
-			<h1>Section 4</h1>
-		</div>
+    <div class="section sec2">
+      <div class="linksTogether">
+        <div class="linksTop">
+          <div class="linksHeader">
+            <img src="img/sec2/link_icon.png" alt="link_icon" />
+            <div class="headerText">Quick Links</div>
+          </div>
+          <div class="linksContentTop">
+            <div class="linksRows">
+              <div class="row1">
+                <div class="element">
+                  <img
+                    src="img/sec2/logoPerfect1.png"
+                    class="logo"
+                    alt="logoPerfect"
+                    data-src="img/sec2/logoPerfect2.png"
+                    onmouseover="toggleLogo(this)"
+                    onmouseleave="toggleLogo(this)"
+                  />
+                </div>
+                <div class="element">
+                  <img
+                    src="img/sec2/logoInspire1.png"
+                    class="logo"
+                    alt="logoPerfect"
+                    data-src="img/sec2/logoInspire2.png"
+                    onmouseover="toggleLogo(this)"
+                    onmouseleave="toggleLogo(this)"
+                  />
+                </div>
+                <div class="element">
+                  <img
+                    src="img/sec2/logoFund1.png"
+                    class="logo"
+                    alt="logoPerfect"
+                    data-src="img/sec2/logoFund2.png"
+                    onmouseover="toggleLogo(this)"
+                    onmouseleave="toggleLogo(this)"
+                  />
+                </div>
+                <div class="element">
+                  <img
+                    src="img/sec2/logoBlue1.png"
+                    class="logo last"
+                    alt="logoPerfect"
+                    data-src="img/sec2/logoBlue2.png"
+                    onmouseover="toggleLogo(this)"
+                    onmouseleave="toggleLogo(this)"
+                  />
+                </div>
+              </div>
+              <div class="row2">
+                <div class="element">
+                  <img
+                    src="img/sec2/logoKids1.png"
+                    class="logo"
+                    alt="logoPerfect"
+                    data-src="img/sec2/logoKids2.png"
+                    onmouseover="toggleLogo(this)"
+                    onmouseleave="toggleLogo(this)"
+                  />
+                </div>
+                <div class="element">
+                  <img
+                    src="img/sec2/logoTools1.png"
+                    class="logo"
+                    alt="logoPerfect"
+                    data-src="img/sec2/logoTools2.png"
+                    onmouseover="toggleLogo(this)"
+                    onmouseleave="toggleLogo(this)"
+                  />
+                </div>
+                <div class="element">
+                  <img
+                    src="img/sec2/logoNews1.png"
+                    class="logo"
+                    alt="logoPerfect"
+                    data-src="img/sec2/logoNews2.png"
+                    onmouseover="toggleLogo(this)"
+                    onmouseleave="toggleLogo(this)"
+                  />
+                </div>
+                <div class="element">
+                  <img
+                    src="img/sec2/logoPurp1.png"
+                    class="logo last"
+                    alt="logoPerfect"
+                    data-src="img/sec2/logoPurp2.png"
+                    onmouseover="toggleLogo(this)"
+                    onmouseleave="toggleLogo(this)"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="linksBot">
+          <div class="linksHeader">
+            <img src="img/sec2/star_icon.png" alt="star_icon" />
+            <div class="headerText">Top picks</div>
+          </div>
+          <div class="linksContentBot">
+            <div class="row">
+              <div class="element">
+                <div class="articleTogether">
+                  <div class="articleImg">
+                    <img src="img/sec2/course1.png" alt="course1" />
+                  </div>
+                  <div class="articleIcon">
+                    <img src="img/sec2/vid1.png" alt="video1" />
+                  </div>
+                  <div class="articleHeader">Training course W</div>
+                  <div class="articleParagraph">
+                    "Because of this 2-day training. I feel more secure in my
+                    role & my future at work"
+                  </div>
+                  <div class="viewMore">
+                    <div class="text">View More</div>
+                    <img src="img/sec2/arrowImg.png" alt="arrow" />
+                  </div>
+                </div>
+              </div>
+              <div class="element">
+                <div class="articleTogether">
+                  <div class="articleImg">
+                    <img src="img/sec2/project1.png" alt="proj1" />
+                  </div>
+                  <div class="articleIcon">
+                    <img src="img/sec2/podcast1.png" alt="podcast1" />
+                  </div>
+                  <div class="articleHeader">Project X</div>
+                  <div class="articleParagraph">
+                    "Because of this 2-day training. I feel more secure in my
+                    role & my future at work"
+                  </div>
+                  <div class="viewMore">
+                    <div class="text">View More</div>
+                    <img src="img/sec2/arrowImg.png" alt="arrow" />
+                  </div>
+                </div>
+              </div>
+              <div class="element">
+                <div class="articleTogether">
+                  <div class="articleImg">
+                    <img src="img/sec2/comp1.png" alt="comp1" />
+                  </div>
+                  <div class="articleIcon">
+                    <img src="img/sec2/artikel1.png" alt="artikel1" />
+                  </div>
+                  <div class="articleHeader">Digital camp1</div>
+                  <div class="articleParagraph">
+                    "Because of this 2-day training. I feel more secure in my
+                    role & my future at work"
+                  </div>
+                  <div class="viewMore">
+                    <div class="text">View More</div>
+                    <img src="img/sec2/arrowImg.png" alt="arrow" />
+                  </div>
+                </div>
+              </div>
+              <div class="element">
+                <div class="articleTogether">
+                  <div class="articleImg">
+                    <img src="img/sec2/toolz1.png" alt="toolz1" />
+                  </div>
+                  <div class="articleIcon">
+                    <img src="img/sec2/artikel2.png" alt="artikel2" />
+                  </div>
+                  <div class="articleHeader">Digital tool Z</div>
+                  <div class="articleParagraph">
+                    "Because of this 2-day training. I feel more secure in my
+                    role & my future at work"
+                  </div>
+                  <div class="viewMore">
+                    <div class="text">View More</div>
+                    <img src="img/sec2/arrowImg.png" alt="arrow" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============SECTION 2 END =================== -->
 
-		<div class="section sec5">
-			<div class="getInTouchTop">
-				<div class="header1">
-					<img src="img/sec5/questionIcon.png" alt="chatIcon" />
-					<h1>Do you have any questions?</h1>
-				</div>
-				<div class="header2"><h2>Ask our team!</h2></div>
-				<div class="btn"><img class="buttonImg" src="img/sec5/buttonEmpty.png" alt="getInTouchButton" /></div>
-			</div>
-			<div class="getInTouchBot">
-				<div class="content">
-					<div class="content1">
-                        <img src="img/sec5/Logo.png" alt="logo">
-                    </div>
-					<div class="content2"></div>
-					<div class="content3"></div>
-					<div class="content4"></div>
-				</div>
-				<div class="footer">
-					<div class="vector"></div>
-					<div class="footers">
-						<div class="footerLeft">© Digiskillsbelgium 2021.</div>
-						<div class="footerRight">
-							<div class="terms">Terms & Conditions</div>
-							<div class="privacy">Privacy policy</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <!-- =============SECTION 3 START =================== -->
 
-		<script src="scripts.js"></script>
-	</body>
+    <div class="section sec3">
+      <div class="galeryTogether">
+        <div class="galeryHeader">
+          <img src="img/sec3/rocket_1.png" alt="rocketIcon" />
+          <div class="headerText">Our most ambitious initiatives</div>
+        </div>
+        <div class="galeryContent">
+          <div class="articleRow">
+            <div class="articleTogether">
+              <div class="articleImg">
+                <img src="img/sec3/img1.png" alt="course1" />
+              </div>
+              <div class="articleHeader">Training course W</div>
+              <div class="viewMore">
+                <div class="text">View More</div>
+                <img src="img/sec3/arrowWhite.png" alt="arrow" />
+              </div>
+            </div>
+            <div class="articleTogether">
+              <div class="articleImg">
+                <img src="img/sec3/img2.png" alt="course1" />
+              </div>
+              <div class="articleHeader">Training course W</div>
+              <div class="viewMore">
+                <div class="text">View More</div>
+                <img src="img/sec3/arrowWhite.png" alt="arrow" />
+              </div>
+            </div>
+            <div class="articleTogether">
+              <div class="articleImg">
+                <img src="img/sec3/img3.png" alt="course1" />
+              </div>
+              <div class="articleHeader">Training course W</div>
+              <div class="viewMore">
+                <div class="text">View More</div>
+                <img src="img/sec3/arrowWhite.png" alt="arrow" />
+              </div>
+            </div>
+            <div class="articleTogether">
+              <div class="articleImg">
+                <img src="img/sec3/img1.png" alt="course1" />
+              </div>
+              <div class="articleHeader">Training course W</div>
+              <div class="viewMore">
+                <div class="text">View More</div>
+                <img src="img/sec3/arrowWhite.png" alt="arrow" />
+              </div>
+            </div>
+          </div>
+          <div class="articlePicker">
+            <img
+              src="img/sec3/slider.png"
+              alt="slider"
+              onclick="alertSorry()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============SECTION 3 END =================== -->
+
+    <!-- =============SECTION 4 START =================== -->
+
+    <div class="section sec4">
+      <div class="highlightTogether">
+        <div class="highlightTop">
+          <div class="sponsoredPic">
+            <img src="img/sec4/sponsored.png" alt="sponsoredPic" />
+          </div>
+          <div class="textPic">
+            <img src="img/sec4/promo.png" alt="promoIcon" />
+            <div class="headerText">This week's fantastical highlight</div>
+          </div>
+          <div class="textParagraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+            maiores, minima ducimus esse exercitationem illo debitis quas
+
+            <br /><br />
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+            maiores, minima ducimus esse exercitationem illo debitis quas
+            repudiandae corporis quod? Doloribus quo sapiente, a natus facilis
+            laborum et accusamus omnis! Lorem ipsum dolor sit amet, consectetur
+            amus omnis!
+          </div>
+          <div class="button">
+            <div class="btn" id="knowMoreBtn" onclick="btnChangeColor()">
+              <span class="label-down">I Want to know more</span>
+              <span class="label-down">I Want to know more</span>
+            </div>
+          </div>
+        </div>
+        <div class="highlightBot">
+          <div class="botLeft">
+            <div class="textPic">
+              <img src="img/sec4/iconPlay.png" alt="playIcon" />
+              <div class="headerText">Your perfect training match</div>
+            </div>
+            <div class="header text miniHeader">
+              Take the free myUQ Skills test to discover your talents!
+            </div>
+            <div class="textParagraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+              maiores, minima ducimus esse exercitationem illo debitis quas
+
+              <br /><br />
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+              maiores, minima ducimus esse exercitationem illo debitis quas
+              repudiandae corporis quod? Doloribus quo sapiente, a natus facilis
+              laborum et accusamus omnis! Lorem ipsum dolor sit amet,
+              consectetur amus omnis!
+            </div>
+            <div class="button">
+              <div class="btn" id="knowMoreBtn" onclick="btnChangeColor()">
+                <span class="label-down">Take the test</span>
+                <span class="label-down">Take the test</span>
+              </div>
+            </div>
+          </div>
+          <div class="botRight" onclick="alertSorry()">
+            <img src="img/sec4/playUnmuted.png" alt="video" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============SECTION 4 END =================== -->
+
+    <!-- =============SECTION 5 START =================== -->
+
+    <div class="section sec5">
+      <div class="getInTouchTop">
+        <div class="header1">
+          <img src="img/sec5/questionIcon.png" alt="chatIcon" />
+          <div class="headerText">Do you have any questions?</div>
+        </div>
+        <div class="header2">
+          <div class="headerText sHeader">Ask our team!</div>
+        </div>
+        <div class="button">
+          <div class="btn" id="getInTouchBtn" onclick="btnChangeColor()">
+            <span class="label-down">Get in touch</span>
+            <span class="label-down">Get in touch</span>
+          </div>
+        </div>
+      </div>
+      <div class="getInTouchBot">
+        <div class="content">
+          <div class="content1">
+            <img src="img/sec5/Logo.png" alt="logo" />
+          </div>
+          <div class="content2">
+            <ul class="word-list">
+              <li>Menu</li>
+              <li>Training Match</li>
+              <li>Digital Initiatives</li>
+              <li>Inspiring Stories</li>
+              <li>Our Misson</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="content3">
+            <ul class="word-list">
+              <li>Andere links</li>
+              <li>Login</li>
+              <li>Become a digital partner</li>
+              <li>my uQ Skills test</li>
+            </ul>
+          </div>
+          <div class="content4">
+            <ul
+              class="word-list"
+              onmouseover="toggleButtonVisibility()"
+              onmouseout="toggleButtonVisibility()"
+            >
+              <li class="headerText">Come visit us</li>
+              <li>Bouwensstraat 21 2140 Antwerp, Belgium</li>
+              <li>
+                <img
+                  src="img/sec5/iconMail.png"
+                  alt="mail"
+                />hello@digiskillsbelgium.be
+              </li>
+              <li>
+                <img src="img/sec5/iconPhone.png" alt="phone" />+32 (0) 3 432 00
+                03
+              </li>
+              <li>
+                <div class="button">
+                  <div class="btn" id="contactUsBtn" onclick="btnChangeColor()">
+                    <span class="label-down">Contact Us</span>
+                    <span class="label-down">Contact Us</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="vector"></div>
+          <div class="footers">
+            <div class="footerLeft">© Digiskillsbelgium 2021.</div>
+            <div class="footerRight">
+              <div class="terms">Terms & Conditions</div>
+              <div class="privacy">Privacy policy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============SECTION 5 END =================== -->
+
+    <script src="scripts.js"></script>
+  </body>
 </html>

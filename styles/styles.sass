@@ -1,7 +1,23 @@
+
 html, body
     margin: 0
     padding: 0
     height: 100%
+    box-sizing: border-box
+    font-family: 'Urbanist', sans-serif
+
+.btn
+    width: 153px
+    height: 51px
+    border-radius: 30px
+    background-color: transparent
+    border: 1px solid #ffffff
+    display: inline-block
+    line-height: 51px
+    overflow: hidden
+    text-align: center
+    color: #ffffff
+    transition: background-color 1s
 
 .section
     width: 100%
@@ -12,6 +28,620 @@ html, body
     color: white
     font-size: 2rem
 
+.headerText
+    font-size: 2.5rem
+    font-weight: 700
+    letter-spacing: 0em
+    text-align: left
+    margin: 0
+    width: auto
+
+.hidden
+    display: none
+
+.label-down
+    display: block
+    margin: 0px 10px
+    height: 100%
+    position: relative
+    top: 0
+    transition: 0.5s
+    font-size: 1rem
+
+.btn:hover .label-down
+    top: -100%
+    cursor: pointer
+
+// ===============GLOBAL END ===================
+
+// ===============SECTION 1 START ===================
+
+.sec1
+    position: relative
+    background-image: url("../img/sec1/bgimg.png")
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    display: flex
+    flex-direction: column
+    height: 100vh
+
+    .content
+        width: 100%
+        height: 10%
+        .navBar
+            width: 80%
+            height: 100%
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            padding-left: 10%
+            padding-right: 10%
+            .pageLogo
+                width: 15%
+                height: 100%
+                margin-right: 7%
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: contain
+            .loginBar
+                background-color: #ffffff
+                width: 25%
+                height: 50px
+                display: flex
+                flex-direction: row
+                align-items: center
+                border-radius: 25px
+                padding-left: 5px
+                .btn
+                    background-color: #050835
+                    height: 40px
+                    width: 120px
+                    line-height: 40px
+                    margin-right: 10px
+                .loginText
+                    color: #050835
+                    font-size: 1rem
+            .lang
+                width: 4%
+                height: 100%
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: center
+                .textL
+                    width: 30%
+                    padding-right: 10px
+                    font-size: 1rem
+                    color: #2D2E33
+            .hLine
+                height: 60%
+                width: 1px
+                background-color: #CBCCCE
+                margin-right: 15px
+                margin-left: 15px
+
+            .text
+                width: auto
+                height: 20%
+                overflow: hidden
+                color: #2D2E33
+                transition: background-color 1s
+                font-size: 0.6rem
+                font-weight: 500
+                span
+                    width: 100%
+            .text:hover .label-down
+                top: -100%
+
+    .other
+        height: 90%
+        width: 100%
+        color: black
+        display: flex
+        align-items: center
+        flex-direction: column
+        .headerTogether
+            width: 100%
+            height: 100px
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: center
+            padding-top: 9%
+            .headerLeft
+                width: 49%
+                height: 100%
+                font-weight: 700
+                color: #FFFFFF
+                font-size: 4rem
+                padding-top: 10px
+                padding-right: 15px
+                text-align: right
+            .image-container
+                width: 16%
+                height: 100%
+                position: relative
+                height: 100px
+                overflow: hidden
+                z-index: 555
+
+            & img
+                position: absolute
+                top: 0
+                left: 0
+                transition: top 1s
+
+            & img:not(.active)
+                top: -100px
+        .textParagraph
+            width: auto
+            height: auto
+            text-align: center
+            font-size: 1.2rem
+            color: #FFFFFF
+            padding-bottom: 20px
+            padding-top: 20px
+        .searchBar
+            background-color: #ffffff
+            width: 50%
+            height: 65px
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: space-between
+            border-radius: 40px
+            margin-top: 2%
+            padding-left: 10px
+            padding-right: 10px
+            .search
+                width: 40%
+                height: 100%
+                font-size: 1.2rem
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: flex-start
+                padding-left: 20px
+                img
+                    margin-right: 20px
+            .lineHz
+                height: 60%
+                width: 1px
+                background-color: #CBCCCE
+                margin-right: 15px
+                margin-left: 15px
+            .dropDown
+                width: 40%
+                height: 100%
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: center
+                font-size: 1.2rem
+                span
+                    margin-left: 15px
+                    margin-right: 15px
+                img
+                    margin-left: 30px
+                    margin-right: 30px
+                .dropdown
+                    position: relative
+                    display: inline-block
+                .selected-option
+                    display: flex
+                    align-items: center
+                    cursor: pointer
+                .option-image
+                    width: 20px
+                    height: 20px
+                    margin-right: 5px
+                .options-list
+                    position: absolute
+                    width: 100%
+                    top: 44px
+                    left: 0
+                    display: none
+                    list-style: none
+                    padding: 0
+                    margin: 0
+                    background-color: #ffffff
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+                    border-radius: 0 0 20px 20px
+
+                .option
+                    border-top: 1px solid black
+                    padding: 8px 12px
+                    cursor: pointer
+
+            .btn
+                background-color: #050835
+                .loginText
+                    color: #050835
+                    font-size: 1rem
+
+    .imgArrow1
+        position: absolute
+        top: 150px
+        right: 30px
+        z-index: 500
+
+    .imgArrow2
+        position: absolute
+        bottom: 50px
+        left: 50px
+        z-index: 500
+
+// ===============SECTION 1 END ===================
+
+// ===============SECTION 2 END ===================
+
+.sec2
+    display: flex
+    flex-direction: column
+    .linksTogether
+        width: 70%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        .linksTop
+            height: 40%
+        .linksBottom
+            height: 50%
+        .linksTop, .linksBot
+            width: 100%
+            display: flex
+            flex-direction: column
+            .linksHeader
+                width: 100%
+                height: 10%
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: left
+                color: #2D2E33
+                padding-bottom: 3%
+            img
+                margin-right: 10px
+            .linksTop img
+                width: 29px
+                height: 14px
+            .linksBot img
+                width: 33px
+                height: 32px
+
+        .linksContentTop
+            width: 100%
+            height: 90%
+            display: flex
+            flex-direction: column
+            .linksRows
+                display: flex
+                flex-direction: column
+                width: 100%
+                height: 100%
+                .row1,.row2
+                    display: flex
+                    flex-direction: row
+                    height: 50%
+                    width: 100%
+                    .element
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        width: 25%
+                        height: 100%
+
+                        .logo
+                            transition: src 1s
+                        img
+                            width: 90%
+                            height: 100%
+                            object-fit: contain
+                    .element .last
+                        width: 75%
+        .linksContentBot
+            width: 100%
+            height: 90%
+            display: flex
+            flex-direction: column
+            .row
+                display: flex
+                flex-direction: row
+                height: 100%
+                width: 100%
+                justify-content: space-between
+                flex-wrap: wrap
+
+                .element
+                    width: 23%
+                    height: 100%
+                    .articleTogether
+                        width: 100%
+                        height: 100%
+                        display: flex
+                        flex-direction: column
+                        align-items: left
+                        justify-content: center
+                        .articleImg
+                            width: 100%
+                            height: auto
+                            overflow: hidden
+                            border-radius: 20px
+
+                            img
+                                width: 100%
+                                height: 100%
+                                margin: 0
+                                transform: scale(1)
+                                transition: all ease-in-out 0.5s
+                        .articleIcon
+                            width: 84px
+                            height: 30px
+                            position: relative
+                            top: -15px
+                            left: 5%
+                            img
+                                width: 100%
+                                height: 100%
+                                margin: 0
+                        .articleHeader
+                            width: 95%
+                            height: 10%
+                            color: #2D2E33
+                            font-size: 1.2rem
+                            font-weight: 700
+                            margin-left: 5%
+                        .articleParagraph
+                            width: 80%
+                            height: 20%
+                            color: #8B8B8E
+                            font-size: 0.8rem
+                            margin-top: 5%
+                            margin-left: 5%
+
+                        .viewMore
+                            width: 80%
+                            height: 20%
+                            display: flex
+                            flex-direction: row
+                            align-items: center
+                            justify-content: left
+                            color: #2D2E33
+                            font-size: 0.8rem
+                            margin-left: 5%
+                            font-weight: 700
+                            img
+                                width: 9px
+                                height: 9px
+                                margin-left: 5px
+                                transition: all ease-in-out 0.5s
+
+                    .articleTogether:hover
+                        background-color: #fffcf4
+                        border-radius: 10px
+                        .articleImg img
+                            transform: scale(1.1)
+                        .viewMore img
+                            margin-left: 15px
+
+// ===============SECTION 2 END ===================
+
+// =============== SECTION 3 START ===================
+
+.sec3
+    display: flex
+    flex-direction: column
+    .galeryTogether
+        background-color: #050835
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        .galeryHeader
+            width: 100%
+            height: 20%
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: center
+            padding-top: 10%
+            img
+                width: 31px
+                height: 31px
+                margin-right: 20px
+
+        .galeryContent
+            width: 100%
+            height: 70%
+            overflow: hidden
+            .articleRow
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                width: 120%
+                height: 70%
+                padding-left: 10%
+                padding-right: 2%
+                .articleTogether
+                    width: 20%
+                    height: 100%
+                    display: flex
+                    flex-direction: column
+                    align-items: left
+                    justify-content: center
+                    padding-left: 1.5%
+                    .articleImg
+                        width: 100%
+                        height: 100%
+                        overflow: hidden
+                        border-radius: 20px
+                        img
+                            margin: 0
+                            transform: scale(1)
+                            transition: all ease-in-out 0.5s
+                    .articleHeader
+                        width: 95%
+                        height: 7%
+                        color: #ffffff
+                        font-size: 1.2rem
+                        font-weight: 700
+                        padding-top: 4%
+                    .viewMore
+                        width: 80%
+                        height: 5%
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        justify-content: left
+                        color: #FFFFFF
+                        font-size: 0.8rem
+                        font-weight: 500
+                        img
+                            width: 9px
+                            height: 9px
+                            margin-left: 5px
+                            transition: all ease-in-out 0.5s
+
+                .articleTogether:hover
+                    border-radius: 10px
+                    .articleImg img
+                        transform: scale(1.1)
+                    .viewMore img
+                        margin-left: 15px
+
+            .articlePicker
+                width: 100%
+                height: 20%
+                display: flex
+                align-items: center
+                justify-content: center
+                img
+                    width: 76px
+                    height: 7px
+            .articlePicker img:hover
+                cursor: pointer
+// ===============SECTION 3 END ===================
+
+// ===============SECTION 4 START ===================
+
+.sec4
+    display: flex
+    flex-direction: column
+    .highlightTogether
+        width: 70%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        .highlightTop
+            background-image: url("../img/sec4/maskGrp.png")
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            border-radius: 15px
+            width: 100%
+            height: 45%
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            justify-content: center
+            margin-top: 5%
+            .sponsoredPic
+                width: 86px
+                height: 30px
+                align-self: flex-end
+                margin: 20px 20px 0 0
+                img
+                    width: 100%
+                    height: 100%
+            .textPic
+                width: 100%
+                height: 20%
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: left
+                margin-left: 5%
+                img
+                    width: 31px
+                    height: 31px
+                    margin-right: 20px
+            .textParagraph
+                width: 50%
+                height: 30%
+                font-size: 1rem
+                margin-left: 5%
+            .button
+                width: 50%
+                height: 50%
+                margin-left: 5%
+                margin-top: 3%
+                .btn
+                    width: 200px
+                    background-color: #050835
+                    border-color: #050835
+
+        .highlightBot
+            width: 100%
+            height: 50%
+            display: flex
+            flex-direction: row
+            .botLeft
+                width: 50%
+                height: 100%
+                .textPic
+                    width: 100%
+                    height: 20%
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    justify-content: left
+                    margin-top: 3%
+                    margin-left: 0
+                    color: #2D2E33
+                .miniHeader
+                    color: #2D2E33
+                    width: 100%
+                    height: 10%
+                    margin-left: 0
+                    font-size: 1.5rem
+                img
+                    width: 31px
+                    height: 31px
+                    margin-right: 20px
+                .textParagraph
+                    color: #8B8B8E
+                    width: 70%
+                    height: 40%
+                    font-size: 1rem
+                .button
+                    width: 50%
+                    height: 20%
+                    .btn
+                        width: 200px
+                        background-color: #050835
+                        border-color: #050835
+
+            .botRight
+                border-radius: 15px
+                width: 50%
+                height: 100%
+                img
+                    margin-top: 10%
+                    margin-left: 10%
+                    width: 90%
+                    height: 80%
+// ===============SECTION 4 END ===================
+
+// ===============SECTION 5 START ===================
 .sec5
     display: flex
     flex-direction: column
@@ -20,47 +650,42 @@ html, body
 .getInTouchTop
     background-image: url("../img/sec5/bgPhoto.png")
     background-size: cover
-    background-position: center
+    background-position: center center
     background-repeat: no-repeat
-    width: 100%
+    width: 60%
     height: 60%
     display: flex
     flex-direction: column
     align-items: left
     justify-content: center
-    padding-left: 50%
+    padding-left: 40%
 
     .header1
         display: flex
         flex-direction: row
         align-items: center
+        width: auto
 
     img
         width: 31px
         height: 31px
         margin-right: 20px
-
-    h1
-        font-size: 40px
-        font-weight: 700
-        letter-spacing: 0em
-        text-align: left
-        margin: 0
+        width: auto
 
     .header2
         margin-top: 20px
+        width: auto
 
-    h2
-        font-size: 35px
+    .sHeader
+        font-size: 2rem
         font-weight: 500
         letter-spacing: 0em
         text-align: left
-        margin: 0
 
-    .btn .buttonImg
+    .button
         margin-top: 40px
-        width: 153px
-        height: 51px
+        .btn
+            background-color: #b9bbbd
 
 .getInTouchBot
     background-color: #050835
@@ -76,32 +701,52 @@ html, body
         height: 90%
         display: flex
         flex-direction: row
+        flex-wrap: wrap
         .content1
             height: 100%
             width: 25%
             img
                 margin-top: 20%
-        .content2
+        .content2, .content3, .content4
             height: 100%
             width: 25%
-            background-color: #196146
+            .word-list
+                list-style-type: none
+                font-size: 1rem
+                padding-top: 20%
+                margin: 0
 
-        .content3
-            height: 100%
-            width: 25%
-            background-color: #7f85e7
+            .word-list li
+                margin-bottom: 10px
 
         .content4
-            height: 100%
-            width: 25%
-            background-color: #196146
+            padding: 15px 0 0 0
+            .btn
+                visibility: hidden
+            ul
+                width: 100%
+                height: 70%
+                border-radius: 20px
+                padding: 0
+
+            .word-list
+                list-style-type: none
+                font-size: 1rem
+                margin: 0
+                padding: 5% 5% 5% 5%
+            .word-list:hover
+                background-color: #76789b
+
+            .word-list li
+                margin-bottom: 20px
+                img
+                    margin-right: 10px
 
     .footer
         display: flex
         flex-direction: column
         width: 100%
         height: 10%
-        // background-color: #0d1be2
         font-size: 14px
         font-weight: 500
         line-height: 17px
@@ -152,15 +797,6 @@ html, body
             position: relative
             top: 0
             left: 0
+// ===============SECTION 5 END ===================
 
-.sec1
-    background-color: #1abc9c
-
-.sec2
-    background-color: #138b73
-
-.sec3
-    background-color: #0b4237
-
-.sec4
-    background-color: #76ebd3
+//==================MEDIA QUERIES==================
